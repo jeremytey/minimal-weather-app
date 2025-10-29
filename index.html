@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimalist Weather App</title>
-    <link rel="stylesheet" href="src/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./src/style.css" />
 </head>
 <body>
-    <div class ="container">
-        <h1>@jeremytey12's Weather Forecast</h1>
-        <form id="weatherForm">
-            <input type="text" id= "cityInput" placeholder="Enter city here..." required >
-            <button type ="submit">Search </button>
-        </form>
-    </div>
+  <div class="container">
+    <h1>Weather Forecast</h1>
+    <form id="weatherForm">
+      <input type="text" id="cityInput" placeholder="Enter city..." required />
+      <button type="submit">Search</button>
+    </form>
 
-    <div id="weatherDisplay">
+    <div id="weatherDisplay" class="hidden">
       <h2 id="cityName"></h2>
       <p id="temp"></p>
       <p id="condition"></p>
       <button id="toggleTemp">Show °F</button>
     </div>
   </div>
-</body>
 
-<script src = "src/index.js"></script>
+  <script type="module" src="./src/index.js"></script>
+</body>
 </html>
